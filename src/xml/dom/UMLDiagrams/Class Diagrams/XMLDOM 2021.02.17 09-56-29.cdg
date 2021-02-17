@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="XMLDOM">
+  <ClassDiagramComponents>
+    <Class name="XMLDOM" package="xml.dom" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="doc" type="Document" visibility="private"/>
+        <Field name="file" type="File" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="File" name="file"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="abrirFile" returnType="void" visibility="private"/>
+        <Method name="recorrerYMostrar" returnType="String" visibility="public"/>
+        <Method name="procesarLibro" returnType="String[]" visibility="private">
+          <Argument type="Node" name="n"/>
+        </Method>
+        <Method name="actualizarLibro" returnType="void" visibility="public">
+          <Argument type="String" name="tituloAntiguo"/>
+          <Argument type="String" name="tituloNuevo"/>
+          <Argument type="String" name="fechaPublicado"/>
+          <Argument type="String" name="autor"/>
+          <Argument type="String" name="categoria"/>
+        </Method>
+        <Method name="actualizarFile" returnType="void" visibility="private"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
